@@ -21,6 +21,8 @@ var markdown_settings = {
     { name: 'Bold', key: 'B', openWith: '**', closeWith: '**', className: 'bold' },
     { name: 'Italic', key: 'I', openWith: '_', closeWith: '_', className: 'italic' },
     { separator: '---' },
+    { name: 'Link', key: 'L', openWith: '[', closeWith: ']([![Url:!:http://]!] "[![Title]!]")', placeHolder: 'Your text to link here...', className: 'add-link' },
+    { separator: '---' },
     { name: 'Preview', call: 'preview', className: "preview" },
     { name: 'Fullscreen', className: 'fullscreen' },
     { name: 'Close fullscreen', className: 'close-fullscreen' }

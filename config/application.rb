@@ -58,5 +58,8 @@ module MarkitupPrototype
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Add the addittional manifests to the precompile array
+    config.assets.precompile += ['markitup-preview.css']
   end
 end
