@@ -1,0 +1,168 @@
+.markItUp {
+
+  .markItUpHeader {
+    height: 30px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      float: left;
+      margin: 0 2px;
+
+      &.markItUpButton {
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        a {
+          cursor: pointer;
+          display: block;
+          height: 30px;
+          overflow: hidden;
+          text-indent: -9999px;
+          width: 20px;
+        }
+
+        &.preview,
+        &.close-fullscreen {
+          display: none;
+        }
+
+      }
+
+      &.markItUpSeparator {
+        background-color: rgb(200,200,200);
+        height: 30px;
+        margin: 0 10px;
+        overflow: hidden;
+        text-indent: -9999px;
+        width: 1px;
+      }
+
+    }
+
+  }
+
+  .markItUpPreviewFrame {
+    display: none;
+  }
+
+}
+
+
+//
+// Fullscreen
+//
+.markItUp.fullscreen {
+
+  .markItUpContainer {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
+
+  .markItUpHeader {
+    background-color: white;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 210;
+
+    ul {
+      padding: 0 15px;
+    }
+
+    li {
+
+      &.markItUpButton {
+
+        &.close-fullscreen {
+          display: block;
+        }
+
+        &.fullscreen {
+          display: none;
+        }
+
+      }
+
+    }
+
+  }
+
+  textarea {
+    background-color: rgb(41, 41, 41);
+    border: 0;
+    border-left: 20px solid rgb(41, 41, 41);
+    color: rgb(221, 221, 221);
+    font-family: monospace;
+    font-size: 14px;
+    height: 100%;
+    left: 0;
+    line-height: 1.35em;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    resize: none;
+    top: 0;
+    width: 50%;
+    z-index: 200;
+  }
+
+  .markItUpPreviewFrame {
+    border: none;
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48%;
+  }
+
+  .markItUpFooter {
+    display: none;
+  }
+
+}
+
+
+//
+// Buttons
+//
+.markdown-editor .markItUpHeader {
+
+  .h2 {
+    background-image: image-url('famfamfam/text_heading_2.png');
+  }
+
+  .h3 {
+    background-image: image-url('famfamfam/text_heading_3.png');
+  }
+
+  .h4 {
+    background-image: image-url('famfamfam/text_heading_4.png');
+  }
+
+  .bold {
+    background-image: image-url('famfamfam/text_bold.png');
+  }
+
+  .italic {
+    background-image: image-url('famfamfam/text_italic.png');
+  }
+
+  .fullscreen {
+    background-image: image-url('famfamfam/application_tile_horizontal.png');
+  }
+
+  .close-fullscreen {
+    background-image: image-url('famfamfam/application_get.png');
+  }
+
+}
