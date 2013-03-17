@@ -22,3 +22,14 @@ ol {
   margin: 0 0 0 20px;
   padding: 0;
 }
+
+table {
+  border: 1px solid rgb(200,200,200);
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid rgb(200,200,200);
+  padding: 3px 10px;
+}
