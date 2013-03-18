@@ -11,16 +11,3 @@
  *= require_self
  *= require _base
  */
-
-html,
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-textarea {
-  width: 600px;
-  height: 350px;
-}

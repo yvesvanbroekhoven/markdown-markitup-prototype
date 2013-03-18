@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MarkitupPrototype</title>
+  <title>A Markdown "kind of" WYSIWYG editor built with jQuery MarkItUp, served in Ruby On Rails.</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-
 <%= yield %>
+
+<a href="https://github.com/yvesvanbroekhoven/markdown-markitup-prototype"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 300" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+<footer>
+  Brought to you by <a href="http://mrhenry.be">Mr. Henry</a>.
+</footer>
 
 </body>
 </html>

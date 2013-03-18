@@ -2,3 +2,36 @@
 
 @import "markitup";
 @import "markdown-cheatsheet";
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+textarea {
+  height: 500px;
+  line-height: 1.5em;
+  padding: 5px;
+  width: 590px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 600px;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  font-size: 11px;
+  padding: 20px;
+  text-align: center;
+}
+
