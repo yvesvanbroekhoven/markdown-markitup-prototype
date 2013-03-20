@@ -62,7 +62,7 @@
   .markItUpContainer {
     bottom: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 30px;
   }
@@ -124,6 +124,7 @@
     right: 0;
     top: 0;
     width: 50%;
+    z-index: 1;
   }
 
   .markItUpFooter {
@@ -184,6 +185,10 @@
 
   .ordered-list {
     background-image: image-url('famfamfam/text_list_numbers.png');
+  }
+
+  .add-table {
+    background-image: image-url('famfamfam/table_add.png');
   }
 
 }

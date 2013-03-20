@@ -50,6 +50,10 @@ var markdown_settings = {
     { separator: '---' },
     { name: 'Unordered list', openWith: '- ', className: 'unordered-list', multiline: true },
     { name: 'Ordered list', openWith: '1. ', closeWith: '\n2. \n3. ', className: 'ordered-list', multiline: true },
+    /*
+ | column header |\n| ------------- | ------------- |\n|               |               |
+    */
+    { name: 'Add table', openWith: '| ', closeWith: ' | column header |\n| ------------- | ------------- |\n|               |               |', placeHolder: 'Column header', className: 'add-table', multiline: true },
     { separator: '---' },
     { name: 'Link', key: 'L', openWith: '[[![Link text]!]', closeWith: ']([![Url:!:http://]!])', className: 'add-link' },
     { name: 'Image', openWith: '![[![Alternative text]!]]', closeWith: '([![Url:!:http://]!] "[![Image title]!]")', className: 'add-image' },
