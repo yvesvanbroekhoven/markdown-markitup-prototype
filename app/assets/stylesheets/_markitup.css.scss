@@ -170,8 +170,20 @@
     background-image: image-url('famfamfam/link.png');
   }
 
+  .add-image {
+    background-image: image-url('famfamfam/picture_add.png');
+  }
+
   .markdown-cheatsheet {
     background-image: image-url('famfamfam/book_open.png');
+  }
+
+  .unordered-list {
+    background-image: image-url('famfamfam/text_list_bullets.png');
+  }
+
+  .ordered-list {
+    background-image: image-url('famfamfam/text_list_numbers.png');
   }
 
 }
