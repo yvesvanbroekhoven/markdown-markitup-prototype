@@ -4,13 +4,42 @@
     <textarea id="textarea" name="textarea">
 # Letting go of the old, embracing the new
 
-The time in software development when you realize that version numbers are moving away from each other, is the time to stop & rethink you goal.
+One of the main features of a CMS _"has to be"_ a WYSIWYG editor. Clients want a familiar feeling, like they are just editing a Word document. For years this has been the way to go. Look at well known editors like _TinyMCE_ & _CKeditor_.
 
-Lalala is our driving engine. Built upon Ruby On Rails, we serve our clients a CMS that gives them the control they deserve, dressed in a Mr. Henry jacket.
+## What you see is not always what you want.
 
-Our, steady as a rock, current Lalala is built upon Rails 2.3, and some of our features we're impossible to upgrade out of the box to Rails 3. After analysing the upgrade possibility, we thought it was good to start with a blank sheet & the lessons we learned from the past.
+The fresh start made us rethink all features we have in our current CMS. The WYSIWYG editor choice was one of them. We've had several discussions on this topic: which plug-and-play editor we should use, which features we wanted or maybe even write our own.
 
-There our journey to a new Lalala began!
+![Full featured WYSIWYG](http://mrhenry.f.mrhenry.eu/files/946/original/tinymce.jpg?1363715435)
+
+The well known WYSIWYG editors have in common some important disadvantages:
+
+| TinyMCE alike editors      | What we want                      |
+| -------------------------: | :-------------------------------- |
+| ugly (unsafe?) HTML output | "no worry" output                 |
+| bloated with features      | only what our clients really need |
+| edit directly in preview   | keep code & preview seperated     |
+| adventurous extending      | easy extending                    |
+
+
+With Github, Basecamp & other, rather geeky sites, embracing simple markup languages like [Markdown](http://daringfireball.net/projects/markdown/) or [Textile](http://en.wikipedia.org/wiki/Textile_%28markup_language%29), we thought we should push our clients in that direction. We choose Markdown over Textile because of the Redcarpet Markdown parser, which gives us major extendability & has a large community.
+
+## But how to teach your client something like Markdown?
+
+Markdown's power lays in it's simpleness. Looking at the WYSIWYG features our clients use (setting headers, putting text in bold, adding links, adding images), we've decided that everyone can learn to write these things in Markdown.
+
+![What you actually use](http://mrhenry.f.mrhenry.eu/files/952/original/tinymce-ideal.jpg?1363853399)
+
+And yes, there will be a learning curve, but we believe that with the right tools, we can step away from an old rusted habbit. We are convinced that the satisfaction rate for clients while they write "code", and instantly see a preview as result, will be an extra win!
+
+So we got busy! Googling for existing plugins, we found 2 solutions that marked our attention: [MarkItUp](http://markitup.jaysalvat.com/home/) & [Epic Editor](http://oscargodson.github.com/EpicEditor/). Both with good features: editing Markdown, showing a preview & serving a toolbar for those who like clicking the buttons. But both have disadvantages, they don't do exactly what we want.
+
+So we took the good parts from both and as result, we've built a prototype which convinced everyone in our team, to definitely go down this lane.
+
+## Color me intrigued!
+
+Go and read the related blogpost!
+
     </textarea>
   </form>
   <div class="fullscreen-arrow">Go fullscreen</div>
